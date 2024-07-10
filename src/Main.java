@@ -2,14 +2,14 @@ public class Main {
 
     public static void main(String[] args) {
 
-        Author firstAuthor = new Author("Nikolay", "Gogol");
-        Author secondAuthor = new Author("Fedor", "Dostoevski");
-        Book one = new Book("Nose", firstAuthor, 1836);
-        Book two= new Book ("Idiot", secondAuthor, 1869);
-        System.out.println("Название книги: " + one.getBookName() + ". Автор: " + firstAuthor.getFirstName() + " " + firstAuthor.getLastName() + ". Год издания: " + one.getYearOfPublication());
-        System.out.println("Название книги: " + two.getBookName() + ". Автор: " + secondAuthor.getFirstName() + " " + secondAuthor.getLastName() + ". Год издания: " + two.getYearOfPublication());
+        Author firstBookAuthor = new Author("Nikolay", "Gogol");
+        Author secondBookAuthor = new Author("Fedor", "Dostoevski");
+        Book one = new Book("Nose", firstBookAuthor, 1836);
+        Book two= new Book ("Idiot", secondBookAuthor, 1869);
+        System.out.println("Название книги: " + one.getBookName() + ". Автор: " + firstBookAuthor.getFirstName() + " " + firstBookAuthor.getLastName() + ". Год издания: " + one.getYearOfPublication());
+        System.out.println("Название книги: " + two.getBookName() + ". Автор: " + secondBookAuthor.getFirstName() + " " + secondBookAuthor.getLastName() + ". Год издания: " + two.getYearOfPublication());
         one.setYearOfPublication(1833);
-        System.out.println("Название книги: " + one.getBookName() + ". Автор: " +  firstAuthor.getFirstName() + " " + firstAuthor.getLastName() +  ". Год издания (изменённый): " + one.getYearOfPublication());
+        System.out.println("Название книги: " + one.getBookName() + ". Автор: " +  firstBookAuthor.getFirstName() + " " + firstBookAuthor.getLastName() +  ". Год издания (изменённый): " + one.getYearOfPublication());
 
 
 
